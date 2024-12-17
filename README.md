@@ -27,6 +27,8 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
 9. **Unidades de Armazenamento de Dados**  
    - Bits, Bytes (B), Kilobytes (KB), Megabytes (MB), Gigabytes (GB), Terabytes (TB)
 
+<br>
+
 ## Pré-requisitos
 
 - **Sistema Operacional:** O programa pode ser executado em sistemas Windows, macOS ou Linux.  
@@ -34,6 +36,8 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
   - GCC (GNU Compiler Collection)
   - Clang  
   - Outro compatível com ANSI C.
+
+<br>
 
 ## Como Compilar
 
@@ -52,6 +56,8 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
    ```bash
    ./conversor
    ```
+<br>
+
 ## Como usar
 
 1. Após compilar o programa, execute-o.
@@ -62,6 +68,7 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
 6. O programa exibirá o resultado da conversão.
 7. O programa perguntará se deseja realizar outra conversão. Se sim, repita os passos 3 a 6. Caso contrário, o programa será encerrado.
 
+<br>
 
 ## Colaboradores
 <table>
