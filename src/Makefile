@@ -3,7 +3,7 @@ CC = gcc
 CFLAGS = -Wall
 
 TARGET = main
-SRC = main.c
+SRC = main.c mass_conversion.c
 HEADERS = main.h
 
 build: $(TARGET)
@@ -12,7 +12,7 @@ $(TARGET): $(SRC) $(HEADERS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
 clean:
-	rm -f $(TARGET)
+	del $(TARGET).exe
 
 run:
-	./main
+	.\$(TARGET).exe
