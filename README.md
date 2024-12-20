@@ -50,8 +50,13 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
 3. Navegue até o diretório do projeto no terminal.  
 4. Compile o programa com o comando:  
    ```bash
-   gcc conversor.c -o conversor 
+   mingw32-make 
    ```
+   ou 
+    ```bash
+    make
+    ```
+
 5. Execute o programa com o comando:
    ```bash
    ./conversor
