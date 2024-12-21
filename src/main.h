@@ -2,6 +2,7 @@
 #define MAIN_H
 
 //declarar funções aqui
-void showMassConversionMenu();
+void showSizeConversionMenu();
+void showMassConversionMenuOfMass();
 
 #endif
