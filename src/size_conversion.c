@@ -43,7 +43,7 @@ void convertCentimetersToMilimeters() {
 
 void convertMilimetersToMeters() {
     double milimeters = readInputValue("Digite o valor em milímetros: ");
-    double meters = convert(milimeters, ONE_UNIT_FACTOR / 100.0);
+    double meters = convert(milimeters, 1.0 / ONE_UNIT_FACTOR);
     printResult(milimeters, meters, "milímetros", "metros");
 }
 
