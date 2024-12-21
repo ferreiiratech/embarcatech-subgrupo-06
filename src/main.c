@@ -6,5 +6,6 @@ int main() {
     system("chcp 65001 > NUL");
 
     showSizeConversionMenu();
+    showMassConversionMenuOfMass();
     return 0;
 }

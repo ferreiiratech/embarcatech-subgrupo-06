@@ -3,5 +3,6 @@
 
 //declarar funções aqui
 void showSizeConversionMenu();
+void showMassConversionMenuOfMass();
 
 #endif
