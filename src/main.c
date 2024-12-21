@@ -1,8 +1,10 @@
 #include "main.h"
-
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-    printf("Hello world!\n");
+    system("chcp 65001 > NUL");
+
+    showSizeConversionMenu();
     return 0;
 }
