@@ -1,22 +1,8 @@
+#include "shared.h"
 #include <stdio.h>
 
 #define ONE_UNIT_KILOGRAM 1000
 #define ONE_UNIT_TON 1000000
-
-double convert(double value, double factor) {
-    return value * factor;
-}
-
-double readInputValue(const char* prompt) {
-    double value;
-    printf("%s", prompt);
-    scanf("%lf", &value);
-    return value;
-}
-
-void printResult(double value1, double value2, const char* unit1, const char* unit2) {
-    printf("%.2lf %s equivalem a %.2lf %s.\n", value1, unit1, value2, unit2);
-}
 
 void convertKilogramsToGrams() {
     double kilograms = readInputValue("Digite o valor em quilogramas: ");
@@ -54,7 +40,7 @@ void convertTonsToGrams() {
     printResult(tons, grams, "toneladas", "gramas");
 }
 
-void showMassConversionMenu() {
+void showMassConversionMenuOfMass() {
     int choice;
 
     do {
