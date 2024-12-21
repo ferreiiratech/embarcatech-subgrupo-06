@@ -41,6 +41,18 @@ void convertCentimetersToMilimeters() {
     printResult(centimeters, milimeters, "centímetros", "milímetros");
 }
 
+void convertMilimetersToMeters() {
+    double milimeters = readInputValue("Digite o valor em milímetros: ");
+    double meters = convert(milimeters, ONE_UNIT_FACTOR / 100.0);
+    printResult(milimeters, meters, "milímetros", "metros");
+}
+
+void convertMilimetersToCentimeters() {
+    double milimeters = readInputValue("Digite o valor em milímetros: ");
+    double centimeters = convert(milimeters, 1.0 / (ONE_UNIT_FACTOR / 100));
+    printResult(milimeters, centimeters, "milímetros", "centímetros");
+}
+
 void showSizeConversionMenu() {
     int choice;
 
@@ -68,6 +80,12 @@ void showSizeConversionMenu() {
                 break;
             case 4:
                 convertCentimetersToMilimeters();
+                break;
+            case 5:
+                convertMilimetersToMeters();
+                break;
+            case 6:
+                convertMilimetersToCentimeters();
                 break;
             case 7:
                 printf("Voltando ao menu principal...\n");
