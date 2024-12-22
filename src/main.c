@@ -1,38 +1,31 @@
-#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
-int main() {
-    system("chcp 65001 > NUL");
-
-    int escolha;
+void showMainMenu() {
+    int choice;
 
     do {
-        printf("\nMenu de Conversão de Unidades:\n");
-        printf("1. Conversão de Volume\n");
-        printf("2. Conversão de Comprimento\n");
-        printf("3. Conversão de Mass\n");
-        printf("4. Sair\n");
+        printf("\n--- Menu Principal ---\n");
+        printf("1. Conversor de Volume\n");
+        printf("2. Sair\n");
         printf("Escolha uma opção: ");
-        scanf("%d", &escolha);
+        scanf("%d", &choice);
 
-        switch (escolha) {
+        switch (choice) {
             case 1:
-                converterVolume();
+                showVolumeConversionMenu();
                 break;
             case 2:
-                showSizeConversionMenu();
-                break;
-            case 3:
-                showMassConversionMenuOfMass();
-                break;
-            case 4:
                 printf("Saindo do programa...\n");
                 break;
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
-    } while (escolha != 4);
+    } while (choice != 2);
+}
 
+int main() {
+    printf("Bem-vindo ao Conversor de Unidades!\n");
+    showMainMenu();
     return 0;
 }
