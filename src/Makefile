@@ -3,7 +3,7 @@ CC = gcc
 CFLAGS = -Wall
 
 TARGET = main
-SRC = main.c speed_conversion.c
+SRC = main.c shared.c size_conversion.c mass_conversion.c volume_conversion.c speed_conversion.c
 HEADERS = main.h
 
 build: $(TARGET)
