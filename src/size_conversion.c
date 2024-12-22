@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 // Função de conversão de Volume
 void converterVolume() {

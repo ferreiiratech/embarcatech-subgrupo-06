@@ -1,18 +1,19 @@
 CC = gcc
-
-CFLAGS = -Wall
-
+CFLAGS = -Wall -Wextra -g3
 TARGET = main
 SRC = main.c size_conversion.c
-HEADERS = main.h
+OBJ = $(SRC:.c=.o)
 
-build: $(TARGET)
+all: $(TARGET)
 
-$(TARGET): $(SRC) $(HEADERS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
+$(TARGET): $(OBJ)
+	$(CC) $(CFLAGS) -o $@ $^
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	del $(TARGET).exe
+	del $(OBJ) $(TARGET).exe
 
-run:
+run: all
 	.\$(TARGET).exe
