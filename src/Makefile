@@ -3,7 +3,7 @@ CC = gcc
 CFLAGS = -Wall
 
 TARGET = main
-SRC = main.c shared.c size_conversion.c mass_conversion.c volume_conversion.c speed_conversion.c
+SRC = main.c size_conversion.c mass_conversion.c shared.c volume_conversion.c storage_conversion.c speed_conversion.c
 HEADERS = main.h
 
 build: $(TARGET)
@@ -12,7 +12,7 @@ $(TARGET): $(SRC) $(HEADERS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
 clean:
-	del $(TARGET).exe
+	rm -r main
 
 run:
-	.\$(TARGET).exe
+	./main

@@ -5,6 +5,7 @@
 void showSizeConversionMenu();
 void showMassConversionMenuOfMass();
 void converterVolume();
+void showStorageConversionMenu();
 void showSpeedConversionMenu();
 
 #endif
