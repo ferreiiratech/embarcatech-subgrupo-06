@@ -8,12 +8,14 @@ int main() {
     int escolha;
 
     do {
+        system("cls");
         printf("\nMenu de Conversão de Unidades:\n");
         printf("1. Conversão de Volume\n");
         printf("2. Conversão de Comprimento\n");
         printf("3. Conversão de Massa\n");
         printf("4. Conversão de unidades de armazenamento de dados\n");
-        printf("5. Sair\n");
+        printf("5. Conversão de Velocidade\n");
+        printf("6. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
 
@@ -31,12 +33,14 @@ int main() {
                 showStorageConversionMenu();
                 break;
             case 5:
+                showSpeedConversionMenu();
+            case 6:
                 printf("Saindo do programa...\n");
                 break;
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
-    } while (escolha != 5);
+    } while (escolha != 6);
 
     return 0;
 }

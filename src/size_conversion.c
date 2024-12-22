@@ -1,5 +1,6 @@
 #include "shared.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 #define ONE_UNIT_FACTOR 1000
 
@@ -43,6 +44,7 @@ void showSizeConversionMenu() {
     int choice;
 
     do{
+        system("cls");
         printf("\n--- Conversor de Comprimento ---\n");
         printf("1. Converter metros para centímetros\n");
         printf("2. Converter metros para milímetros\n");
@@ -50,8 +52,8 @@ void showSizeConversionMenu() {
         printf("4. Converter centímetros para milímetros\n");
         printf("5. Converter milímetros para metros\n");
         printf("6. Converter milímetros para centímetros\n");
-        printf("7. Voltar\n");
-        printf("Escolha uma opção: ");
+        printf("7. Voltar\n\n");
+        printf("-> Escolha uma opção: ");
         scanf("%d", &choice);
 
         switch(choice){
@@ -79,5 +81,6 @@ void showSizeConversionMenu() {
             default:
                 printf("Opção inválida! Tente Novamente.\n");
         }
+        system("pause");
     }while(choice != 7);
 }
