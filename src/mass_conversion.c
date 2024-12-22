@@ -1,5 +1,6 @@
 #include "shared.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 #define ONE_UNIT_KILOGRAM 1000
 #define ONE_UNIT_TON 1000000
@@ -44,6 +45,7 @@ void showMassConversionMenuOfMass() {
     int choice;
 
     do {
+        system("cls");
         printf("\n--- Conversor de Massas ---\n");
         printf("1. Converter quilogramas para gramas\n");
         printf("2. Converter quilogramas para toneladas\n");
@@ -51,8 +53,8 @@ void showMassConversionMenuOfMass() {
         printf("4. Converter gramas para toneladas\n");
         printf("5. Converter toneladas para quilogramas\n");
         printf("6. Converter toneladas para gramas\n");
-        printf("7. Voltar\n");
-        printf("Escolha uma opção: ");
+        printf("7. Voltar\n\n");
+        printf("-> Escolha uma opção: ");
         scanf("%d", &choice);
 
         switch (choice) {
@@ -80,5 +82,6 @@ void showMassConversionMenuOfMass() {
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
+        system("pause");
     } while (choice != 7);
 }
