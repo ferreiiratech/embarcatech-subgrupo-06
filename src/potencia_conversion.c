@@ -42,11 +42,9 @@ do {
     ConversaoPotencia(unidadep, valorp);
     
     printf("\nDigite 's' caso deseje continuar e 'n' caso deseja encerrar\n");
-    getchar();
     scanf(" %c", &continuar); }
 
 while (continuar == 's' || continuar == 'S');
 printf("\nprograma encerrado\n");
 system("pause");
-return 0;
-}
+return 0; }
