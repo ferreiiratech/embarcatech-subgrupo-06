@@ -3,7 +3,7 @@
 
 double readInputValue(const char* message) {
     double value;
-    printf("%s", message);
+    printf("\n%s", message);
     scanf("%lf", &value);
     return value;
 }
