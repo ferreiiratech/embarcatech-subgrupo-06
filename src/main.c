@@ -16,7 +16,7 @@ int main() {
         printf("4. Conversão de unidades de armazenamento de dados\n");
         printf("5. Conversão de Velocidade\n");
         printf("6. Sair\n");
-        printf("Escolha uma opção: ");
+        printf("Escolha alguma opção:");
         scanf("%d", &escolha);
 
         switch (escolha) {
