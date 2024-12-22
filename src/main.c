@@ -11,8 +11,9 @@ int main() {
         printf("\nMenu de Conversão de Unidades:\n");
         printf("1. Conversão de Volume\n");
         printf("2. Conversão de Comprimento\n");
-        printf("3. Conversão de Mass\n");
-        printf("4. Sair\n");
+        printf("3. Conversão de Massa\n");
+        printf("4. Conversão de unidades de armazenamento de dados\n")
+        printf("5. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
 
@@ -32,7 +33,7 @@ int main() {
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
-    } while (escolha != 4);
+    } while (escolha != 5);
 
     return 0;
 }
