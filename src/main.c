@@ -12,7 +12,7 @@ int main() {
         printf("1. Conversão de Volume\n");
         printf("2. Conversão de Comprimento\n");
         printf("3. Conversão de Massa\n");
-        printf("4. Conversão de unidades de armazenamento de dados\n")
+        printf("4. Conversão de unidades de armazenamento de dados\n");
         printf("5. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
@@ -28,6 +28,9 @@ int main() {
                 showMassConversionMenuOfMass();
                 break;
             case 4:
+                showStorageConversionMenu();
+                break;
+            case 5:
                 printf("Saindo do programa...\n");
                 break;
             default:
