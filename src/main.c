@@ -13,9 +13,10 @@ int main() {
         printf("1. Conversão de Volume\n");
         printf("2. Conversão de Comprimento\n");
         printf("3. Conversão de Massa\n");
-        printf("4. Conversão de unidades de armazenamento de dados\n");
+        printf("4. Conversão de Armazenamento de dados\n");
         printf("5. Conversão de Velocidade\n");
-        printf("6. Sair\n");
+        printf("6. Conversão de Potência\n");
+        printf("7. Sair\n");
         printf("Escolha alguma opção:");
         scanf("%d", &escolha);
 
@@ -35,12 +36,15 @@ int main() {
             case 5:
                 showSpeedConversionMenu();
             case 6:
+                showPotenciaConversionMenu();
+                break;
+            case 7:
                 printf("Saindo do programa...\n");
                 break;
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
-    } while (escolha != 6);
+    } while (escolha != 7);
 
     return 0;
 }
