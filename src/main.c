@@ -35,6 +35,7 @@ int main() {
                 break;
             case 5:
                 showSpeedConversionMenu();
+                break;
             case 6:
                 showPotenciaConversionMenu();
                 break;
