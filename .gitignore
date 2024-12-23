@@ -1,4 +1,6 @@
 src/main
 src/NUL
 .vscode/
+output/
+src/output/
 *.exe
