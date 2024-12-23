@@ -47,6 +47,6 @@ void showPotenciaConversionMenu() {
         scanf(" %c", &continuar); 
     } while (continuar == 's' || continuar == 'S');
 
-    printf("\nprograma encerrado\n");
+    printf("\nVoltando...\n");
     system("pause");
 }
