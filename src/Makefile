@@ -12,7 +12,7 @@ $(TARGET): $(SRC) $(HEADERS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
 clean:
-	rm -r main
+	del $(TARGET).exe
 
 run:
-	./main
+	.\$(TARGET).exe
