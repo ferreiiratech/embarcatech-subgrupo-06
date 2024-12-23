@@ -50,23 +50,37 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
 3. Navegue até o diretório do projeto no terminal.  
 4. Compile o programa com o comando:  
    ```bash
-   gcc conversor.c -o conversor 
+   mingw32-make 
    ```
+   ou 
+    ```bash
+    make
+    ```
+
 5. Execute o programa com o comando:
    ```bash
-   ./conversor
+   ./main
    ```
 <br>
 
-## Como usar
+## Como usar  
 
-1. Após compilar o programa, execute-o.
-2. O programa exibirá um menu com as opções de conversão disponíveis.
-3. Selecione a opção desejada digitando o número correspondente.
-4. O programa solicitará a entrada de um valor numérico.
-5. Digite o valor que deseja converter.
-6. O programa exibirá o resultado da conversão.
-7. O programa perguntará se deseja realizar outra conversão. Se sim, repita os passos 3 a 6. Caso contrário, o programa será encerrado.
+1. Após compilar o programa, execute-o.  
+2. O programa exibirá um menu com as seguintes opções de conversão:  
+    - **1. Conversão de Volume**  
+    - **2. Conversão de Comprimento**  
+    - **3. Conversão de Massa**  
+    - **4. Conversão de Armazenamento de Dados**  
+    - **5. Conversão de Velocidade**  
+    - **6. Conversão de Potência**  
+    - **7. Sair**  
+3. Digite o número correspondente à conversão desejada.  
+4. O programa solicitará a entrada de um valor ou subopção, dependendo do tipo de conversão selecionado.  
+5. Insira o valor a ser convertido.  
+6. O resultado da conversão será exibido na tela.  
+7. Caso deseje realizar outra conversão, o menu reaparecerá. Digite outra opção ou selecione "7" para encerrar o programa.  
+8. Se uma opção inválida for digitada, o programa exibirá uma mensagem de erro e solicitará uma nova entrada.  
+
 
 <br>
 
@@ -74,34 +88,53 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/usuario">
-        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2387693-icone-do-perfil-do-usuario-vetor.jpg" width="100px;" alt="Nome do colaborador"/><br>
+      <a href="https://github.com/ferreiiratech">
+        <img src="https://github.com/ferreiiratech.png" width="100px;" alt="Nome do colaborador"/><br>
         <sub>
-          <b>Nome do colaborador</b>
+          <b>Leonardo Ferreira</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/usuario">
-        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2387693-icone-do-perfil-do-usuario-vetor.jpg" width="100px;" alt="Nome do colaborador"/><br>
+      <a href="https://github.com/yasmincsme">
+        <img src="https://github.com/yasmincsme.png" width="100px;" alt="Nome do colaborador"/><br>
         <sub>
-          <b>Nome do colaborador</b>
+          <b>Yasmin Cordeiro</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/usuario">
-        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2387693-icone-do-perfil-do-usuario-vetor.jpg" width="100px;" alt="Nome do colaborador"/><br>
+      <a href="https://github.com/thalissoncastrog">
+        <img src="https://github.com/thalissoncastrog.png" width="100px;" alt="Nome do colaborador"/><br>
         <sub>
-          <b>Nome do colaborador</b>
+          <b>Thalisson Castro</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/usuario">
-        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2387693-icone-do-perfil-do-usuario-vetor.jpg" width="100px;" alt="Nome do colaborador"/><br>
+      <a href="https://github.com/ArthurSaldanha01">
+        <img src="https://github.com/ArthurSaldanha01.png" width="100px;" alt="Nome do colaborador"/><br>
         <sub>
-          <b>Nome do colaborador</b>
+          <b>Arthur Saldanha</b>
+        </sub>
+      </a>
+    </td>
+        <td align="center">
+      <a href="https://github.com/ateniltonjr">
+        <img src="https://github.com/ateniltonjr.png" width="100px;" alt="Nome do colaborador"/><br>
+        <sub>
+          <b>Atenilton Santos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    </td>
+        <td align="center">
+      <a href="https://github.com/bigodinhojf">
+        <img src="https://github.com/bigodinhojf.png" width="100px;" alt="Nome do colaborador"/><br>
+        <sub>
+          <b>João Felipe</b>
         </sub>
       </a>
     </td>
