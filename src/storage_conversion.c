@@ -1,5 +1,6 @@
 #include "shared.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 #define BIT_TO_BYTE 0.125  
 #define BYTE_TO_KILOBYTE 0.001
@@ -41,14 +42,15 @@ void showStorageConversionMenu() {
     int choice;
 
     do {
+        system("cls");
         printf("\n--- Conversor de Unidade de Armazenamento ---\n");
         printf("1. Converter bits para bytes\n");
         printf("2. Converter bytes para kilobytes\n");
         printf("3. Converter kilobytes para megabytes\n");
         printf("4. Converter megabytes para gigabytes\n");
         printf("5. Converter gigabytes para terabytes\n");
-        printf("6. Sair\n");
-        printf("Escolha uma opção: ");
+        printf("6. Voltar\n\n");
+        printf("-> Escolha uma opção: ");
         scanf("%d", &choice);
 
         switch (choice) {
@@ -68,11 +70,12 @@ void showStorageConversionMenu() {
                 convertGigabytesToTerabytes();
                 break;
             case 6:
-                printf("Saindo...\n");
+                printf("Voltando...\n");
                 break;
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
+        system("pause");
     } while (choice != 6);
 }
 
