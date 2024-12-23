@@ -34,6 +34,7 @@ void showPotenciaConversionMenu() {
     float valorp;
 
     do {
+        system("cls");
         printf("Insira a unidade de potência: 'w' para watts, 'k' para kilo watts, 'c' para cavalo vapor, 'h' para Hourse Power\n");
         scanf(" %c", &unidadep);
         
