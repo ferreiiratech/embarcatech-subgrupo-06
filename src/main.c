@@ -48,6 +48,9 @@ int main() {
             case 6:
                 showPotenciaConversionMenu();
                 break;
+            case 7: 
+                conversao_tempo();
+                break;
             case 8:
                 printf("Saindo do programa...\n");
                 break;
