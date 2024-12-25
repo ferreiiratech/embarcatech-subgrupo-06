@@ -4,6 +4,7 @@
 
 void conversao_tempo();
 
+    //Calculando função de conversão de tempo
     void converter_segundos(int total_segundos, int *dias, int *hora, int *minutos, int *segundos)
 {   
     *dias = total_segundos/84600;
@@ -69,6 +70,7 @@ void conversao_tempo() {
     int dia, horas, minutos, segundos;
         // Solicita entrada do usuário
     printf("Digite o total de segundos: ");
+        //Verificando se o valor no usario é maior do que 0
     while (scanf("%d", &total_segundos) != 1 || total_segundos < 0) {
         printf("Erro: insira um número inteiro positivo.\n");
         scanf("%d", &total_segundos);
