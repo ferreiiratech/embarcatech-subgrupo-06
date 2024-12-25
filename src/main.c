@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-    int converter_segundos(int total_segundos, int dia, int hora, int minutos, int segundos)
-    {   
-    dia = total_segundos/84600;
-    hora = (total_segundos%84600)/3600;
-    minutos = (total_segundos%3600)/60;
-    segundos = total_segundos%60;
+    int converter_segundos(int total_segundos, int *dias, int *hora, int *minutos, int *segundos)
+{   
+    *dias = total_segundos/84600;
+    *hora = (total_segundos%84600)/3600;
+    *minutos = (total_segundos%3600)/60;
+    *segundos = total_segundos%60;
     }
 
 int main() {
@@ -24,7 +24,8 @@ int main() {
         printf("4. Conversão de Armazenamento de dados\n");
         printf("5. Conversão de Velocidade\n");
         printf("6. Conversão de Potência\n");
-        printf("7. Sair\n");
+        printf("7. Conversão de Tempo\n");
+        printf("8. Sair\n");
         printf("Escolha alguma opção:");
         scanf("%d", &escolha);
 
@@ -47,7 +48,7 @@ int main() {
             case 6:
                 showPotenciaConversionMenu();
                 break;
-            case 7:
+            case 8:
                 printf("Saindo do programa...\n");
                 break;
             default:
