@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+    int converter_segundos(int total_segundos, int dia, int hora, int minutos, int segundos)
+    {   
+    dia = total_segundos/84600;
+    hora = (total_segundos%84600)/3600;
+    minutos = (total_segundos%3600)/60;
+    segundos = total_segundos%60;
+    }
+
 int main() {
     system("chcp 65001 > NUL");
 
@@ -61,3 +69,6 @@ void conversao_tempo() {
     }
     // Realiza a conversão
     converter_segundos(total_segundos, &dia, &horas, &minutos, &segundos);
+    // Exibe o resultado
+    printf("Resultado: %d dias, %d horas, %d minutos, %d segundos\n", dia, horas, minutos, segundos);
+}
