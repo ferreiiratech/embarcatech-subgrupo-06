@@ -16,7 +16,8 @@ int main() {
         printf("4. Conversão de Armazenamento de dados\n");
         printf("5. Conversão de Velocidade\n");
         printf("6. Conversão de Potência\n");
-        printf("7. Sair\n");
+        printf("7. Conversão de Temperatura\n");
+        printf("8. Sair\n");
         printf("Escolha alguma opção:");
         scanf("%d", &escolha);
 
@@ -40,12 +41,15 @@ int main() {
                 showPotenciaConversionMenu();
                 break;
             case 7:
+                showConverter_temperatura();
+                break;
+            case 8:
                 printf("Saindo do programa...\n");
                 break;
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
-    } while (escolha != 7);
+    } while (escolha != 8);
 
     return 0;
 }
