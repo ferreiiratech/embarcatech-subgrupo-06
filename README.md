@@ -6,7 +6,7 @@
 
 # Programa Conversor de Unidades
 
-Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza conversões entre diferentes sistemas de medida, abrangendo as seguintes funcionalidades:
+Este programa é um **Conversor de Unidades** desenvolvido em **C** como parte de uma atividade do projeto **Embarcatech**. O objetivo é realizar conversões entre diferentes sistemas de medida, abrangendo as seguintes funcionalidades:
 
 1. **Unidades de Comprimento**  
    - Metro (m), Centímetro (cm), Milímetro (mm)
@@ -81,6 +81,34 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
 7. Caso deseje realizar outra conversão, o menu reaparecerá. Digite outra opção ou selecione "7" para encerrar o programa.  
 8. Se uma opção inválida for digitada, o programa exibirá uma mensagem de erro e solicitará uma nova entrada.  
 
+<br>
+
+## Exemplo de Uso
+
+![https://imgur.com/OMkdBcw.gif](https://imgur.com/OMkdBcw.gif)
+
+## Estrutura de Pastas
+A estrutura de pastas foi organizada para facilitar a manutenção e o entendimento do projeto. A seguir, está a disposição dos arquivos e diretórios:
+
+```bash
+/src
+  |-- area_conversion.c
+  |-- main.c
+  |-- main.h
+  |-- Makefile
+  |-- mass_conversion.c
+  |-- potencia_conversion.c
+  |-- shared.c
+  |-- shared.h
+  |-- size_conversion.c
+  |-- speed_conversion.c
+  |-- storage_conversion.c
+  |-- temperature_conversion.c
+  |-- time_conversion.c
+  |-- volume_conversion.c
+.gitignore
+README.md
+```
 
 <br>
 
