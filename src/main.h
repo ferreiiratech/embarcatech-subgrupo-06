@@ -8,5 +8,6 @@ void converterVolume();
 void showStorageConversionMenu();
 void showSpeedConversionMenu();
 void showPotenciaConversionMenu();
+void showTimeConversionMenu();
 
 #endif

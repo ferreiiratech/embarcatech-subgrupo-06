@@ -2,22 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void conversao_tempo();
-
-    //Calculando função de conversão de tempo
-    void converter_segundos(int total_segundos, int *dias, int *hora, int *minutos, int *segundos)
-{   
-    *dias = total_segundos/84600;
-    *hora = (total_segundos%84600)/3600;
-    *minutos = (total_segundos%3600)/60;
-    *segundos = total_segundos%60;
-}
-
 int main() {
     system("chcp 65001 > NUL");
 
     int escolha;
-    //teste
+
     do {
         system("cls");
         printf("\nMenu de Conversão de Unidades:\n");
@@ -27,8 +16,9 @@ int main() {
         printf("4. Conversão de Armazenamento de dados\n");
         printf("5. Conversão de Velocidade\n");
         printf("6. Conversão de Potência\n");
-        printf("7. Conversão de Tempo\n");
-        printf("8. Sair\n");
+        printf("7. Conversão de Área\n");
+        printf("8. Conversão de Tempo\n");
+        printf("9. Sair\n");
         printf("Escolha alguma opção:");
         scanf("%d", &escolha);
 
@@ -51,32 +41,19 @@ int main() {
             case 6:
                 showPotenciaConversionMenu();
                 break;
-            case 7: 
-                conversao_tempo();
+            case 7:
+                showAreaConversionMenu();
                 break;
             case 8:
+                showTimeConversionMenu();
+                break;
+            case 9:
                 printf("Saindo do programa...\n");
                 break;
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
-    } while (escolha != 7);
+    } while (escolha != 9);
 
     return 0;
-}
-
-void conversao_tempo() {
-    int total_segundos; // Variável para entrada do usuário
-    int dia, horas, minutos, segundos;
-        // Solicita entrada do usuário
-    printf("Digite o total de segundos: ");
-        //Verificando se o valor no usario é maior do que 0
-    while (scanf("%d", &total_segundos) != 1 || total_segundos < 0) {
-        printf("Erro: insira um número inteiro positivo.\n");
-        scanf("%d", &total_segundos);
-    }
-    // Realiza a conversão
-    converter_segundos(total_segundos, &dia, &horas, &minutos, &segundos);
-    // Exibe o resultado
-    printf("Resultado: %d dias, %d horas, %d minutos, %d segundos\n", dia, horas, minutos, segundos);
 }
