@@ -18,7 +18,8 @@ int main() {
         printf("6. Conversão de Potência\n");
         printf("7. Conversão de Área\n");
         printf("8. Conversão de Tempo\n");
-        printf("9. Sair\n");
+        printf("9. Conversão de Temperatura\n");
+        printf("10. Sair\n");
         printf("Escolha alguma opção:");
         scanf("%d", &escolha);
 
@@ -48,12 +49,15 @@ int main() {
                 showTimeConversionMenu();
                 break;
             case 9:
+                showTemperatureConversionMenu();
+                break;
+            case 10:
                 printf("Saindo do programa...\n");
                 break;
             default:
                 printf("Opção inválida! Tente novamente.\n");
         }
-    } while (escolha != 9);
+    } while (escolha != 10);
 
     return 0;
 }

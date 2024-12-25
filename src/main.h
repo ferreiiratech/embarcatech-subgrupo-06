@@ -10,5 +10,6 @@ void showSpeedConversionMenu();
 void showPotenciaConversionMenu();
 void showAreaConversionMenu();
 void showTimeConversionMenu();
+void showTemperatureConversionMenu();
 
 #endif
