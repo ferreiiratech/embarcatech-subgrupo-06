@@ -51,5 +51,11 @@ int main() {
 }
 
 void conversao_tempo() {
-    int total_seconds; // Variável para entrada do usuário
-    int days, hours, minutes, seconds;
+    int total_segundos; // Variável para entrada do usuário
+    int dia, horas, minutos, segundos;
+        // Solicita entrada do usuário
+    printf("Digite o total de segundos: ");
+    if (scanf("%d", &total_segundos) != 1 || total_segundos < 0) {
+        printf("Erro: insira um número inteiro positivo.\n");
+        return;
+    }
