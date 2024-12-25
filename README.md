@@ -36,6 +36,7 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** como parte d
   - GCC (GNU Compiler Collection)
   - Clang  
   - Outro compatível com ANSI C.
+- **Ferramenta de Compilação:** Certifique-se de que o **mingw32-make** esteja devidamente configurado para compilar o projeto corretamente.
 
 <br>
 
