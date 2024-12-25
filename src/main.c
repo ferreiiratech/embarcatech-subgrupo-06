@@ -59,3 +59,5 @@ void conversao_tempo() {
         printf("Erro: insira um número inteiro positivo.\n");
         return;
     }
+    // Realiza a conversão
+    converter_segundos(total_segundos, &dia, &horas, &minutos, &segundos);
