@@ -127,14 +127,32 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** que realiza 
         </sub>
       </a>
     </td>
-  </tr>
-  <tr>
     </td>
         <td align="center">
       <a href="https://github.com/bigodinhojf">
         <img src="https://github.com/bigodinhojf.png" width="100px;" alt="Nome do colaborador"/><br>
         <sub>
           <b>João Felipe</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    </td>
+        <td align="center">
+      <a href="https://github.com/SamuelLopesH">
+        <img src="https://github.com/SamuelLopesH.png" width="100px;" alt="Nome do colaborador"/><br>
+        <sub>
+          <b>Samuel Lopes</b>
+        </sub>
+      </a>
+    </td>
+    </td>
+        <td align="center">
+      <a href="https://github.com/nrocha46">
+        <img src="https://github.com/nrocha46.png" width="100px;" alt="Nome do colaborador"/><br>
+        <sub>
+          <b>Nicole Rocha</b>
         </sub>
       </a>
     </td>
