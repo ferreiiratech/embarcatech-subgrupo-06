@@ -49,3 +49,7 @@ int main() {
 
     return 0;
 }
+
+void conversao_tempo() {
+    int total_seconds; // Variável para entrada do usuário
+    int days, hours, minutes, seconds;
