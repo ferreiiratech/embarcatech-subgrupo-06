@@ -44,10 +44,3 @@ void showTemperatureConversionMenu() {
     printf("\nVoltando...\n");
     system("pause");
 }
-
-// Função principal
-int main() {
-    setlocale(LC_ALL, ""); // Configura o uso de caracteres especiais
-    showTemperatureConversionMenu();
-    return 0;
-}
