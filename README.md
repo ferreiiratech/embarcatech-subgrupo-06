@@ -85,7 +85,7 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** como parte d
 
 ## Exemplo de Uso
 
-![https://imgur.com/OMkdBcw.gif](https://imgur.com/OMkdBcw.gif)
+![assets/execucao.gif](assets/execucao.gif)
 
 ## Estrutura de Pastas
 A estrutura de pastas foi organizada para facilitar a manutenção e o entendimento do projeto. A seguir, está a disposição dos arquivos e diretórios:
