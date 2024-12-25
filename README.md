@@ -73,7 +73,10 @@ Este programa é um **Conversor de Unidades** desenvolvido em **C** como parte d
     - **4. Conversão de Armazenamento de Dados**  
     - **5. Conversão de Velocidade**  
     - **6. Conversão de Potência**  
-    - **7. Sair**  
+    - **7. Conversão de Área**
+    - **8. Conversão de Tempo**
+    - **9. Conversão de Temperatura**
+    - **10. Sair** 
 3. Digite o número correspondente à conversão desejada.  
 4. O programa solicitará a entrada de um valor ou subopção, dependendo do tipo de conversão selecionado.  
 5. Insira o valor a ser convertido.  
